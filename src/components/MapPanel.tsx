@@ -52,7 +52,7 @@ function FitBounds({
 
 function HeatLayer({ points }: { points: GeocodePoint[] }) {
   const map = useMap();
-  const layerRef = useRef<L.Layer | null>(null);
+  const layerRef = useRef<import('leaflet').Layer | null>(null);
 
   useEffect(() => {
     if (!map) return;
