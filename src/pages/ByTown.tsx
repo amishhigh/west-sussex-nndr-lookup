@@ -10,7 +10,7 @@ import { ColumnDef } from '@tanstack/react-table';
 import { RateRecord } from '../utils/csvParser';
 
 export default function ByTown() {
-  const { data, aggregations, loading, error } = useCSVData();
+  const { aggregations, loading, error } = useCSVData();
   const [selectedTown, setSelectedTown] = useState<string | null>(null);
 
   const options = useMemo(() => {
